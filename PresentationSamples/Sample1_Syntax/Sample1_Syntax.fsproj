@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Basic.fst" />
+    <Compile Include="DependentTypes.fst" />
+    <Compile Include="EffectSystem.fst" />
+    <Compile Include="Program.fst" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FStar.Windows.Ocaml.Unofficial" Version="0.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ulibfs">
+      <HintPath>..\..\..\..\Users\mateu\.nuget\packages\fstar.windows.ocaml.unofficial\0.4.0\lib\net45\ulibfs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
